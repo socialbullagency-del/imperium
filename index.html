@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Imperium Transport Tampa | Private Chauffeur, Sprinter, Yacht & Jet</title>
+<meta name="description" content="Private chauffeur, Sprinter van, yacht and jet charter services across Tampa, Orlando, Miami and Houston. Built for comfort. Driven with class.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap">
+
+<style>
+:root {
+  --onyx:        #000000;
+  --onyx-2:      #0A0A0A;
+  --onyx-3:      #141414;
+  --card:        #161616;
+  --card-2:      #1C1C1C;
+  --white:       #FFFFFF;
+  --w-92:        rgba(255,255,255,0.92);
+  --w-70:        rgba(255,255,255,0.70);
+  --w-50:        rgba(255,255,255,0.50);
+  --w-30:        rgba(255,255,255,0.30);
+  --w-15:        rgba(255,255,255,0.15);
+  --w-08:        rgba(255,255,255,0.08);
+  --line:        rgba(255,255,255,0.10);
+  --ff-roman:    'Cinzel', serif;
+  --ff-display:  'Cormorant Garamond', Georgia, serif;
+  --ff-body:     'Inter', -apple-system, sans-serif;
+  --t:           0.5s cubic-bezier(0.25,0.46,0.45,0.94);
+  --t-fast:      0.25s ease;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  font-family: var(--ff-body);
+  background: var(--onyx);
+  color: var(--white);
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+img { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; cursor: pointer; }
+
+body::before {
+  content: '';
+  position: fixed; inset: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at center, transparent 0%, rgba(0,0,0,0.45) 100%),
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  background-size: 100% 100%, 160px 160px;
+  pointer-events: none;
+  z-index: 999;
+  mix-blend-mode: overlay;
+}
+
+.wrap { max-width: 1320px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); }
+
+.eyebrow {
+  display: inline-flex; align-items: center; gap: 14px;
+  font-family: var(--ff-body);
+  font-size: 11px; font-weight: 500;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.eyebrow::before {
+  content: ''; width: 32px; height: 1px;
+  background: linear-gradient(90deg, transparent, var(--white));
+}
+.eyebrow.center { justify-content: center; }
+.eyebrow.center::after {
+  content: ''; width: 32px; height: 1px;
+  background: linear-gradient(90deg, var(--white), transparent);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--ff-display);
+  font-weight: 400;
+  color: var(--white);
+  letter-spacing: -0.005em;
+  line-height: 1.04;
+}
+.section-h2 { font-size: clamp(38px, 5.5vw, 78px); margin-bottom: 18px; }
+.section-h2 em { font-style: italic; color: var(--white); font-weight: 300; opacity: 0.7; }
+.section-lead {
+  font-family: var(--ff-body);
+  font-weight: 300;
+  font-size: 17px;
+  color: var(--w-70);
+  line-height: 1.65;
+  max-width: 580px;
+}
+
+/* ============ BUTTONS ============ */
+.btn {
+  display: inline-flex; align-items: center; gap: 14px;
+  padding: 18px 34px;
+  font-family: var(--ff-body);
+  font-size: 11.5px; font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  border: none; cursor: pointer;
+  transition: all var(--t);
+  white-space: nowrap;
+}
+.btn-solid {
+  background: var(--white);
+  color: var(--onyx);
+}
+.btn-solid:hover {
+  background: var(--w-92);
+  transform: translateY(-2px);
+  box-shadow: 0 16px 50px -10px rgba(255,255,255,0.25);
+}
+.btn-ghost {
+  background: transparent;
+  color: var(--white);
+  border: 1px solid var(--w-30);
+}
+.btn-ghost:hover {
+  border-color: var(--white);
+  background: var(--w-08);
+}
+.btn svg { width: 14px; height: 14px; transition: transform var(--t-fast); }
+.btn:hover svg { transform: translateX(4px); }
+
+/* ============ NAV ============ */
+.nav {
+  position: fixed; top: 0; left: 0; right: 0;
+  z-index: 100;
+  padding: 22px 0;
+  transition: all var(--t);
+}
+.nav.scrolled {
+  padding: 12px 0;
+  background: rgba(0,0,0,0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--w-08);
+}
+.nav-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 clamp(20px, 4vw, 56px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+.brand {
+  display: flex; align-items: center;
+}
+.brand img {
+  height: 96px;
+  width: auto;
+  display: block;
+  transition: height var(--t);
+}
+.nav.scrolled .brand img { height: 72px; }
+.nav-links {
+  display: flex; gap: 38px;
+  list-style: none;
+}
+.nav-links a {
+  font-size: 11px; font-weight: 500;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--w-70);
+  position: relative;
+  transition: color var(--t-fast);
+}
+.nav-links a:hover { color: var(--white); }
+.nav-cta {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 12px 22px;
+  font-size: 11px; font-weight: 600;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  background: transparent;
+  color: var(--white);
+  border: 1px solid var(--w-30);
+  transition: all var(--t-fast);
+}
+.nav-cta:hover {
+  background: var(--white);
+  color: var(--onyx);
+  border-color: var(--white);
+}
+.menu-toggle {
+  display: none;
+  background: none; border: none;
+  color: var(--white);
+  padding: 6px;
+}
+
+/* ============ HERO ============ */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 80px;
+  overflow: hidden;
+}
+.hero-video {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  filter: brightness(0.6) saturate(0.85) contrast(1.05);
+}
+.hero::after {
+  content: '';
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(180deg, rgba(0,0,0,0.78) 0%, rgba(0,0,0,0.25) 30%, rgba(0,0,0,0.95) 100%),
+    linear-gradient(90deg, rgba(0,0,0,0.55) 0%, transparent 55%);
+  z-index: 1;
+}
+.hero-inner {
+  position: relative; z-index: 2;
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 clamp(20px, 4vw, 56px);
+}
+.hero-cities {
+  display: flex; gap: 16px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+.hero-city {
+  font-family: var(--ff-body);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--w-70);
+  display: flex; align-items: center; gap: 14px;
+}
+.hero-city:not(:last-child)::after {
+  content: '';
+  width: 4px; height: 4px;
+  border-radius: 50%;
+  background: var(--white);
+}
+.hero-city.first::before {
+  content: '';
+  width: 32px; height: 1px;
+  background: var(--white);
+  margin-right: 0;
+}
+.hero h1 {
+  font-size: clamp(48px, 8vw, 124px);
+  font-weight: 300;
+  line-height: 0.98;
+  letter-spacing: -0.018em;
+  margin-bottom: 28px;
+  max-width: 1000px;
+}
+.hero h1 em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--white);
+  opacity: 0.85;
+}
+.hero-sub {
+  font-family: var(--ff-body);
+  font-size: clamp(15px, 1.4vw, 18px);
+  font-weight: 300;
+  color: var(--w-70);
+  max-width: 520px;
+  line-height: 1.6;
+  margin-bottom: 44px;
+}
+.hero-ctas {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.hero-scroll {
+  position: absolute;
+  left: 50%;
+  bottom: 28px;
+  transform: translateX(-50%);
+  display: flex; flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  z-index: 3;
+  pointer-events: none;
+}
+.hero-scroll-label {
+  font-size: 10px;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--w-50);
+}
+.hero-scroll-line {
+  width: 1px; height: 42px;
+  background: linear-gradient(180deg, var(--white), transparent);
+  animation: scrollBlink 2.2s ease-in-out infinite;
+}
+@keyframes scrollBlink {
+  0%, 100% { opacity: 0.4; transform: translateY(0); }
+  50%      { opacity: 1;   transform: translateY(6px); }
+}
+
+/* ============ FLEET / BENTO ============ */
+.fleet {
+  padding: 130px 0;
+}
+.fleet-head {
+  max-width: 720px;
+  margin: 0 auto 64px;
+  text-align: center;
+}
+.fleet-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 16px;
+}
+.fleet-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--card);
+  min-height: 360px;
+  cursor: pointer;
+  transition: border-color var(--t), transform var(--t);
+  text-decoration: none;
+  color: inherit;
+}
+.fleet-card:hover {
+  border-color: var(--w-30);
+  transform: translateY(-4px);
+}
+.fleet-card-img {
+  position: absolute; inset: 0;
+  background-size: cover;
+  background-position: center;
+  transition: transform 1.2s cubic-bezier(0.25,0.46,0.45,0.94), filter var(--t);
+  filter: brightness(0.65) saturate(0.6) contrast(1.05);
+}
+.fleet-card:hover .fleet-card-img {
+  transform: scale(1.06);
+  filter: brightness(0.85) saturate(0.9) contrast(1.05);
+}
+.fleet-card::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.1) 30%, rgba(0,0,0,0.92) 100%);
+  z-index: 1;
+}
+.fleet-card-body {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  z-index: 2;
+  padding: 36px 32px;
+  display: flex; flex-direction: column;
+}
+.fleet-card-tag {
+  font-family: var(--ff-body);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+.fleet-card h3 {
+  font-size: clamp(28px, 3vw, 42px);
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+.fleet-card h3 em { font-style: italic; opacity: 0.7; }
+.fleet-card p {
+  font-family: var(--ff-body);
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--w-70);
+  line-height: 1.6;
+  margin-bottom: 22px;
+  max-width: 380px;
+}
+.fleet-card-link {
+  font-family: var(--ff-body);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--white);
+  display: inline-flex; align-items: center; gap: 10px;
+  transition: gap var(--t-fast);
+}
+.fleet-card:hover .fleet-card-link { gap: 16px; }
+.fleet-card-link svg { width: 12px; height: 12px; }
+
+.fleet-card.f-1 { grid-column: span 7; min-height: 520px; }
+.fleet-card.f-2 { grid-column: span 5; min-height: 520px; }
+.fleet-card.f-3 { grid-column: span 5; }
+.fleet-card.f-4 { grid-column: span 7; }
+
+/* ============ STANDARD / PILLARS ============ */
+.standard {
+  padding: 130px 0;
+  background: var(--onyx-2);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  position: relative;
+  overflow: hidden;
+}
+.standard::before {
+  content: '';
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  width: 1200px; height: 1200px;
+  background: radial-gradient(circle, rgba(255,255,255,0.04) 0%, transparent 60%);
+  pointer-events: none;
+}
+.standard-inner {
+  position: relative; z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 80px;
+  align-items: center;
+}
+.standard-head h2 { margin-bottom: 26px; }
+.standard-head p {
+  font-family: var(--ff-body);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+  color: var(--w-70);
+  margin-bottom: 18px;
+}
+.standard-head p strong { color: var(--white); font-weight: 500; }
+.pillars {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--w-15);
+  border: 1px solid var(--w-15);
+}
+.pillar {
+  background: var(--onyx-3);
+  padding: 38px 32px;
+  transition: background var(--t-fast);
+}
+.pillar:hover { background: var(--card-2); }
+.pillar-num {
+  font-family: var(--ff-roman);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.32em;
+  color: var(--white);
+  margin-bottom: 22px;
+  display: block;
+}
+.pillar h4 {
+  font-family: var(--ff-display);
+  font-style: italic;
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--white);
+  margin-bottom: 10px;
+}
+.pillar p {
+  font-family: var(--ff-body);
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--w-70);
+  line-height: 1.65;
+}
+
+/* ============ COVERAGE ============ */
+.coverage {
+  padding: 130px 0;
+  background: var(--onyx);
+}
+.coverage-head {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 80px;
+}
+.cities-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4px;
+  border: 1px solid var(--w-15);
+  background: var(--w-15);
+}
+.city {
+  background: var(--onyx-2);
+  padding: 56px 32px;
+  text-align: center;
+  position: relative;
+  transition: background var(--t);
+  cursor: default;
+  overflow: hidden;
+}
+.city::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(160deg, rgba(255,255,255,0.05) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity var(--t);
+}
+.city:hover { background: var(--card-2); }
+.city:hover::before { opacity: 1; }
+.city-state {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.42em;
+  color: var(--w-70);
+  margin-bottom: 16px;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+.city-name {
+  font-family: var(--ff-roman);
+  font-weight: 500;
+  font-size: clamp(22px, 2.4vw, 32px);
+  letter-spacing: 0.18em;
+  color: var(--white);
+  margin-bottom: 14px;
+  position: relative;
+  z-index: 2;
+}
+.city-coord {
+  font-family: var(--ff-body);
+  font-size: 10.5px;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--w-30);
+  position: relative;
+  z-index: 2;
+}
+
+/* ============ EDITORIAL ============ */
+.editorial {
+  padding: 0;
+  background: var(--onyx);
+}
+.editorial-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 720px;
+}
+.editorial-img {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  filter: saturate(0.5) brightness(0.85);
+}
+.editorial-img::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(90deg, transparent 60%, var(--onyx));
+}
+.editorial-text {
+  display: flex; align-items: center;
+  padding: 100px clamp(40px, 6vw, 96px);
+  background: var(--onyx);
+}
+.editorial-text-inner { max-width: 520px; }
+.editorial-text h2 { font-size: clamp(40px, 4.5vw, 64px); margin-bottom: 26px; }
+.editorial-text > div > p {
+  font-family: var(--ff-body);
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--w-70);
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+.editorial-text > div > p strong { color: var(--white); font-weight: 500; }
+.editorial-quote {
+  margin-top: 38px;
+  padding-top: 30px;
+  border-top: 1px solid var(--w-15);
+  font-family: var(--ff-display);
+  font-style: italic;
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--w-92);
+  line-height: 1.5;
+}
+.editorial-quote-attr {
+  font-family: var(--ff-body);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--w-70);
+  margin-top: 14px;
+}
+
+/* ============ RESERVATION ============ */
+.reservation {
+  padding: 140px 0;
+  background: linear-gradient(180deg, var(--onyx) 0%, var(--onyx-2) 100%);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.reservation::before {
+  content: '';
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  width: 1000px; height: 1000px;
+  background: radial-gradient(circle, rgba(255,255,255,0.04) 0%, transparent 55%);
+  pointer-events: none;
+}
+.reservation-inner {
+  position: relative; z-index: 2;
+  max-width: 820px;
+  margin: 0 auto;
+}
+.reservation h2 {
+  font-size: clamp(40px, 5.5vw, 76px);
+  margin-bottom: 22px;
+  font-weight: 300;
+}
+.reservation h2 em { font-style: italic; opacity: 0.75; font-weight: 400; }
+.reservation p {
+  font-size: 17px;
+  font-weight: 300;
+  color: var(--w-70);
+  line-height: 1.65;
+  margin-bottom: 44px;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.reservation-ctas {
+  display: flex; justify-content: center; gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+.reservation-divider {
+  display: flex; align-items: center; gap: 22px;
+  max-width: 520px;
+  margin: 0 auto 30px;
+}
+.reservation-divider::before,
+.reservation-divider::after {
+  content: ''; flex: 1; height: 1px;
+  background: var(--w-15);
+}
+.reservation-divider span {
+  font-family: var(--ff-roman);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.4em;
+  color: var(--white);
+}
+.reservation-contact {
+  display: flex; justify-content: center; gap: 56px;
+  flex-wrap: wrap;
+}
+.reservation-contact-item {
+  display: flex; flex-direction: column; gap: 6px;
+  align-items: center;
+}
+.reservation-contact-label {
+  font-family: var(--ff-body);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--w-50);
+}
+.reservation-contact-value {
+  font-family: var(--ff-display);
+  font-style: italic;
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--white);
+  transition: opacity var(--t-fast);
+}
+.reservation-contact-value:hover { opacity: 0.7; }
+
+/* ============ FOOTER ============ */
+.footer {
+  background: var(--onyx);
+  border-top: 1px solid var(--line);
+  padding: 56px 0 28px;
+}
+.footer-inner {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 clamp(20px, 4vw, 56px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 28px;
+}
+.footer-inner .brand img { height: 84px; }
+.footer-meta {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.footer-meta a {
+  font-family: var(--ff-body);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--w-70);
+  transition: color var(--t-fast);
+}
+.footer-meta a:hover { color: var(--white); }
+.footer-bottom {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 clamp(20px, 4vw, 56px);
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--w-30);
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.rv {
+  opacity: 0;
+  transform: translateY(36px);
+  transition: opacity 0.85s var(--t), transform 0.85s var(--t);
+}
+.rv.in { opacity: 1; transform: translateY(0); }
+.rv-d1 { transition-delay: 0.1s; }
+.rv-d2 { transition-delay: 0.2s; }
+.rv-d3 { transition-delay: 0.3s; }
+.rv-d4 { transition-delay: 0.4s; }
+
+@media (max-width: 1024px) {
+  .editorial-grid { grid-template-columns: 1fr; }
+  .editorial-img { min-height: 360px; }
+  .editorial-img::after { background: linear-gradient(180deg, transparent 60%, var(--onyx)); }
+  .editorial-text { padding: 80px 40px; }
+  .standard-inner { grid-template-columns: 1fr; gap: 48px; }
+  .cities-grid { grid-template-columns: 1fr 1fr; }
+  .fleet-card.f-1, .fleet-card.f-2, .fleet-card.f-3, .fleet-card.f-4 { grid-column: span 6; min-height: 380px; }
+}
+@media (max-width: 720px) {
+  .nav-links { display: none; }
+  .nav-cta { display: none; }
+  .menu-toggle { display: block; }
+  .nav { padding: 14px 0; }
+  .nav.scrolled { padding: 10px 0; }
+  .brand img { height: 68px; }
+  .nav.scrolled .brand img { height: 54px; }
+  .hero { padding-bottom: 60px; }
+  .hero-cities { gap: 12px; }
+  .hero-city { font-size: 10px; letter-spacing: 0.26em; }
+  .hero h1 { font-size: clamp(40px, 12vw, 64px); }
+  .hero-sub { font-size: 15px; }
+  .hero-ctas .btn { width: 100%; justify-content: center; }
+  .hero-scroll { display: none; }
+  .fleet, .standard, .coverage, .reservation { padding: 80px 0; }
+  .fleet-grid { gap: 12px; }
+  .fleet-card.f-1, .fleet-card.f-2, .fleet-card.f-3, .fleet-card.f-4 {
+    grid-column: span 12; min-height: 340px;
+  }
+  .fleet-card-body { padding: 28px 24px; }
+  .fleet-card h3 { font-size: 26px; }
+  .pillars { grid-template-columns: 1fr; }
+  .cities-grid { grid-template-columns: 1fr; }
+  .city { padding: 38px 24px; }
+  .editorial-text { padding: 60px 24px; }
+  .reservation-ctas { flex-direction: column; align-items: stretch; }
+  .reservation-ctas .btn { justify-content: center; }
+  .reservation-contact { gap: 36px; }
+  .reservation-contact-value { font-size: 18px; }
+  .footer-meta { gap: 18px; }
+  .footer-meta a { font-size: 10px; letter-spacing: 0.2em; }
+  .footer-inner { flex-direction: column; align-items: flex-start; gap: 24px; }
+  .footer-bottom { flex-direction: column; gap: 8px; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#" class="brand" aria-label="Imperium Transport Tampa">
+      <img src="logo.jpg" alt="Imperium Transport Tampa">
+    </a>
+    <ul class="nav-links">
+      <li><a href="#fleet">Fleet</a></li>
+      <li><a href="#standard">The Standard</a></li>
+      <li><a href="#coverage">Coverage</a></li>
+      <li><a href="#reservation">Reserve</a></li>
+    </ul>
+    <a href="#reservation" class="nav-cta">Reserve · 24/7</a>
+    <button class="menu-toggle" aria-label="Menu">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7h18M3 17h18"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <video class="hero-video" autoplay muted loop playsinline preload="metadata">
+    <source src="hero.mp4" type="video/mp4">
+  </video>
+  <div class="hero-inner">
+    <div class="hero-cities rv">
+      <span class="hero-city first">Tampa</span>
+      <span class="hero-city">Orlando</span>
+      <span class="hero-city">Miami</span>
+      <span class="hero-city">Houston</span>
+    </div>
+    <h1 class="rv rv-d1">Built for comfort.<br>Driven with <em>class.</em></h1>
+    <p class="hero-sub rv rv-d2">Private chauffeur, Sprinter, yacht, and jet services for those who measure quality by the silence of the engine and the precision of the hour.</p>
+    <div class="hero-ctas rv rv-d3">
+      <a href="#reservation" class="btn btn-solid">Reserve Your Experience
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#fleet" class="btn btn-ghost">View the Fleet</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span class="hero-scroll-label">Scroll</span>
+    <div class="hero-scroll-line"></div>
+  </div>
+</header>
+
+<!-- FLEET -->
+<section class="fleet" id="fleet">
+  <div class="wrap">
+    <div class="fleet-head rv">
+      <div class="eyebrow center">The Fleet</div>
+      <h2 class="section-h2" style="margin-top:22px;">Four ways to <em>move.</em><br>One standard of arrival.</h2>
+      <p class="section-lead" style="margin: 22px auto 0;">Black car chauffeur for the executive transfer. Sprinter for the group of state. Yacht for the day at sea. Gulfstream for the city we forgot was far. All chauffeured. All discreet.</p>
+    </div>
+
+    <div class="fleet-grid">
+
+      <a href="#reservation" class="fleet-card f-1 rv">
+        <div class="fleet-card-img" style="background-image: url('chauffer.jpg');"></div>
+        <div class="fleet-card-body">
+          <span class="fleet-card-tag">Service · 01</span>
+          <h3>Chauffeur <em>Services</em></h3>
+          <p>Black plate. Black wheel. Black interior. Cadillac Escalade and GMC Yukon fleet for executive transfers, airport pick-ups, and the days that move on the hour.</p>
+          <span class="fleet-card-link">Reserve a Chauffeur
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </span>
+        </div>
+      </a>
+
+      <a href="#reservation" class="fleet-card f-2 rv rv-d1">
+        <div class="fleet-card-img" style="background-image: url('sprinter.JPG');"></div>
+        <div class="fleet-card-body">
+          <span class="fleet-card-tag">Group · 02</span>
+          <h3>Sprinter <em>Van</em></h3>
+          <p>Up to twelve guests, custom interior, and the same attention to the hour as a single passenger.</p>
+          <span class="fleet-card-link">Reserve the Sprinter
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </span>
+        </div>
+      </a>
+
+      <a href="#reservation" class="fleet-card f-3 rv rv-d2">
+        <div class="fleet-card-img" style="background-image: url('yacht.jpg');"></div>
+        <div class="fleet-card-body">
+          <span class="fleet-card-tag">Sea · 03</span>
+          <h3>Yacht <em>Charter</em></h3>
+          <p>Half-day, full-day, sunset and overnight rentals across the Gulf and the Bay. Crew, captain, and quiet — the day at sea, on your terms.</p>
+          <span class="fleet-card-link">Reserve a Yacht
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </span>
+        </div>
+      </a>
+
+      <a href="#reservation" class="fleet-card f-4 rv rv-d3">
+        <div class="fleet-card-img" style="background-image: url('jet.WEBP');"></div>
+        <div class="fleet-card-body">
+          <span class="fleet-card-tag">Air · 04</span>
+          <h3>Private <em>Jet</em></h3>
+          <p>City-to-city in hours. Light, mid, and heavy jets across our four-city grid. We move you. The pilot moves the plane.</p>
+          <span class="fleet-card-link">Reserve a Jet
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- STANDARD / PILLARS -->
+<section class="standard" id="standard">
+  <div class="wrap">
+    <div class="standard-inner">
+      <div class="standard-head rv">
+        <div class="eyebrow">The Imperium Standard</div>
+        <h2 class="section-h2" style="margin-top:22px;">Four codes.<br><em>One promise.</em></h2>
+        <p>Other companies sell rides. We sell <strong>arrival</strong> — the precise hour, the kept silence, the chauffeur who already knows the door you prefer.</p>
+        <p>If a single one of the four is broken, your next experience is on us.</p>
+      </div>
+      <div class="pillars">
+        <div class="pillar rv">
+          <span class="pillar-num">I</span>
+          <h4>Discretion</h4>
+          <p>Black plates. No logos on the vehicle. Driver does not speak unless spoken to. What happens in the cabin stays in the cabin.</p>
+        </div>
+        <div class="pillar rv rv-d1">
+          <span class="pillar-num">II</span>
+          <h4>Punctuality</h4>
+          <p>We are early by fifteen minutes. Always. The schedule is the contract — and the schedule is honored.</p>
+        </div>
+        <div class="pillar rv rv-d2">
+          <span class="pillar-num">III</span>
+          <h4>Crafted</h4>
+          <p>Water, towels, charging cables, and your preferred climate set before you open the door. Itinerary tailored to your day, not our route.</p>
+        </div>
+        <div class="pillar rv rv-d3">
+          <span class="pillar-num">IV</span>
+          <h4>Available</h4>
+          <p>A direct line to a human, around the clock. No bots. No menus. Twenty-four hours a day, three hundred sixty-five days a year.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COVERAGE -->
+<section class="coverage" id="coverage">
+  <div class="wrap">
+    <div class="coverage-head rv">
+      <div class="eyebrow center">The Territory</div>
+      <h2 class="section-h2" style="margin-top:22px;">Four cities. <em>One operation.</em></h2>
+      <p class="section-lead" style="margin: 22px auto 0;">A single phone call moves you across Florida and into Texas — same chauffeur standard, same fleet philosophy, in every city we name.</p>
+    </div>
+    <div class="cities-grid">
+      <div class="city rv">
+        <span class="city-state">Florida</span>
+        <div class="city-name">TAMPA</div>
+        <span class="city-coord">27.9506° N · 82.4572° W</span>
+      </div>
+      <div class="city rv rv-d1">
+        <span class="city-state">Florida</span>
+        <div class="city-name">ORLANDO</div>
+        <span class="city-coord">28.5384° N · 81.3789° W</span>
+      </div>
+      <div class="city rv rv-d2">
+        <span class="city-state">Florida</span>
+        <div class="city-name">MIAMI</div>
+        <span class="city-coord">25.7617° N · 80.1918° W</span>
+      </div>
+      <div class="city rv rv-d3">
+        <span class="city-state">Texas</span>
+        <div class="city-name">HOUSTON</div>
+        <span class="city-coord">29.7604° N · 95.3698° W</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDITORIAL -->
+<section class="editorial">
+  <div class="editorial-grid">
+    <div class="editorial-img" style="background-image: url('chauffer.jpg');"></div>
+    <div class="editorial-text">
+      <div class="editorial-text-inner rv">
+        <div class="eyebrow">Behind the Brand</div>
+        <h2 class="section-h2" style="margin-top:22px;">Imperium is not a <em>service.</em><br>It is a <em>posture.</em></h2>
+        <div>
+          <p>We do not advertise. We are referred. Most of our calendar is filled by professionals who only know our number because someone else handed it to them in confidence.</p>
+          <p>What we sell is the <strong>quiet certainty</strong> that the car will be there before you are, the driver will know the door, and the day will move on your terms — not the city's.</p>
+        </div>
+        <div class="editorial-quote">"The luxury we sell is not the leather. It is the freedom of not thinking about the ride."</div>
+        <div class="editorial-quote-attr">— The Imperium Standard</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESERVATION -->
+<section class="reservation" id="reservation">
+  <div class="reservation-inner">
+    <div class="eyebrow center rv">Reserve · 24 / 7</div>
+    <h2 class="rv rv-d1" style="margin-top:22px;">A single call.<br><em>Your day, handled.</em></h2>
+    <p class="rv rv-d2">Tell us the date, the airport, the marina, the city. We handle the rest — vehicle, route, captain, pilot, and the hour. Reservations confirmed within fifteen minutes, any time of day.</p>
+    <div class="reservation-ctas rv rv-d3">
+      <a href="tel:+18133334444" class="btn btn-solid">Call to Reserve
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.33 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/imperiumtampa/" target="_blank" rel="noopener" class="btn btn-ghost">DM on Instagram</a>
+    </div>
+    <div class="reservation-divider rv rv-d4"><span>Or write to us</span></div>
+    <div class="reservation-contact rv rv-d4">
+      <div class="reservation-contact-item">
+        <span class="reservation-contact-label">Direct Line · 24/7</span>
+        <a href="tel:+18133334444" class="reservation-contact-value">(813) 333-4444</a>
+      </div>
+      <div class="reservation-contact-item">
+        <span class="reservation-contact-label">Concierge Inbox</span>
+        <a href="mailto:reserve@imperiumtampa.com" class="reservation-contact-value">reserve@imperiumtampa.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <a href="#" class="brand" aria-label="Imperium Transport Tampa">
+      <img src="logo.jpg" alt="Imperium Transport Tampa">
+    </a>
+    <div class="footer-meta">
+      <a href="#fleet">Fleet</a>
+      <a href="#standard">Standard</a>
+      <a href="#coverage">Coverage</a>
+      <a href="#reservation">Reserve</a>
+      <a href="https://www.instagram.com/imperiumtampa/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Imperium Luxury Transportation & Hospitality Services</div>
+    <div>Tampa · Orlando · Miami · Houston</div>
+  </div>
+</footer>
+
+<script>
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 60);
+}, { passive: true });
+
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('in');
+      io.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.14 });
+document.querySelectorAll('.rv').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
